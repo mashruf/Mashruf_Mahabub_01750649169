@@ -1,0 +1,3 @@
+/.pytest_cache
+/hl7_parser/__pycache__
+/test/__pycache__
