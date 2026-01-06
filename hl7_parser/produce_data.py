@@ -100,6 +100,4 @@ def extractProviderInfo(message):
     return provider_id, provider_name, provider_location
 
 
-# print(extractProviderInfo('./sample_data/sample.hl7'))
-
 

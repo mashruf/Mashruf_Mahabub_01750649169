@@ -44,9 +44,4 @@ def checkMessageType(message):
     else:
         return "Required HL7 segment is missing!"
 
-    
-    
 
-# segments = checkSegments('./sample_data/sample.hl7')
-# print(segments)
-# print(checkMessageType('./sample_data/sample.hl7'))
