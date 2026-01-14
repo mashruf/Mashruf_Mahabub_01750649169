@@ -100,4 +100,3 @@ def extractProviderInfo(message):
     return provider_id, provider_name, provider_location
 
 
-

@@ -5,18 +5,25 @@ split the message based on new line and retun a list
 '''
 def checkSegments(message):  
     
-    # open the hl7 file
-    file = open(message, 'r')
+    # # open the hl7 file
+    # file = open(message, 'r')
 
-    # read message from the hl7 file
-    msg = file.read()
+    # # read message from the hl7 file
+    # msg = file.read()
 
-    # checking all the required segments present
-    if "MSH|" in msg and "SCH|" in msg and "PID|" in msg and "PV1|" in msg: 
-        return msg.splitlines()
-    
+    try:
+        with open(message, 'r') as file:
+            msg = file.read()
+    except FileNotFoundError:
+        print("Error: File not found!")
     else:
-        return "Required HL7 segment is missing!"
+        # checking all the required segments present
+        if "MSH|" in msg and "SCH|" in msg and "PID|" in msg and "PV1|" in msg: 
+            return msg.splitlines()
+    
+        else:
+            return "Required HL7 segment is missing!"
+    
         
 
 

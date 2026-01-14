@@ -18,7 +18,7 @@ details = {
     },
     "provider":{
     "id": pv1[0],
-    "name": pv1[2]
+    "name": pv1[1]
     },
     "location": pv1[2],
     "reason": sch[1]    
