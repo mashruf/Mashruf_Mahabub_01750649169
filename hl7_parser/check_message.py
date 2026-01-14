@@ -15,7 +15,8 @@ def checkSegments(message):
         with open(message, 'r') as file:
             msg = file.read()
     except FileNotFoundError:
-        print("Error: File not found!")
+        # print("Error: File not found!")
+        return "Error: File not found!"
     else:
         # checking all the required segments present
         if "MSH|" in msg and "SCH|" in msg and "PID|" in msg and "PV1|" in msg: 
@@ -24,7 +25,6 @@ def checkSegments(message):
         else:
             return "Required HL7 segment is missing!"
     
-        
 
 
 '''

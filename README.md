@@ -71,6 +71,8 @@ pip install pytest
 
 - Testing was done using `sample_invalid_msh.hl7` and `sample_missing_seg.hl7` sample data to check whether the system shows error if the message has missing segment or does not have the required message type SIU S12.
 
+- System showing error message if no file is found
+
 - All the value of the extracted data is returning None if the message has missing segment SCH, PID, PV1 or don't have valid message type SIU S12.
 
 ## Running the project
